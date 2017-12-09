@@ -1,0 +1,251 @@
+@charset "utf-8";
+/* ======================================
+Created by Arthur Systems (http://arthur.systems).
+© All rights reserved 2016.
+====================================== */
+
+@import url("main.css");
+@import url("theme.css");
+
+/* ====================================== Main settings */
+
+html{
+	direction: rtl;
+}
+
+body{
+	background: url(../images/bg.jpg) top center no-repeat;
+	-webkit-background-size: cover cover;
+	background-size: cover cover;
+}
+
+.clr{
+	clear: both;
+}
+
+.fontBold{
+	font-weight: bold;
+}
+
+.phonemenu{
+	color: #BEBEBE;
+	font-size: 22px;
+}
+
+/* ====================================== Bootstrap code changes */
+.nav>li>a:focus, .nav>li>a:hover{
+	background-color: transparent;
+}
+
+.panel{
+	padding: 0;
+}
+
+.icon-bar{
+	color: #FFFFFF;
+}
+
+@media (min-width: 992px){
+	.col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9{
+		float: right !important;
+	}
+}
+
+
+@media (max-width: 992px){
+	.logo img{
+		width: 70%;
+	}
+}
+
+@media screen and (max-width: 604px){
+	.pull-right{
+		float: none !important;
+	}
+	
+	.pull-left{
+		float: none !important;
+	}
+	
+	/* Yes Button */
+	.yesButtonReg{
+		background: #d0e331 !important;
+		width: 100% !important;
+		height: auto !important;
+	}
+	
+	.yesButtonReg a h4{
+		padding: 20px !important;
+		-webkit-text-shadow: 1px 1px 0px #FFFFFF;
+		text-shadow: 1px 1px 1px #FFFFFF;
+	}
+	
+	.hand{
+		display: none;
+	}
+	
+	/* No Button */
+	.nobhand{
+		display: none;
+	}
+	
+	.noButtonReg{
+		background: #e2315f !important;
+		width: 100% !important;
+		height: auto !important;
+	}
+	
+	.noButtonReg a h4{
+		padding: 20px !important;
+		-webkit-text-shadow: 1px 1px 0px #FFFFFF;
+		text-shadow: 1px 1px 1px #FFFFFF;
+	}
+}
+
+@media (max-width: 360px){
+	.logo img{
+		display: none;
+	}
+}
+/* ====================================== Header */
+.logo{
+	text-align: center;
+	margin-bottom: 5%;
+}
+
+/* ====================================== Main Content */
+
+.main aside{
+	height: 100px;
+}
+
+.yesb{
+	position: relative;
+	cursor: pointer;
+	text-align: center;
+	margin: 0 auto;
+}
+/* Hand */
+.hand{
+	position: absolute;
+	top: 0;
+	right: 30%;
+	font-size: 100px;
+	color: #000;
+	opacity: 0;
+	-webkit-text-shadow: 2px 2px 0px #FFFFFF;
+	text-shadow: 2px 2px 0px #FFFFFF;
+	transition: all ease 0.2s;
+}
+
+.yesb:hover > .hand{
+	top: 30px;
+	opacity: 1;
+}
+
+/* Yes Buttton */
+.yesButtonReg{
+	background: url(../images/yesbutton.png);
+	width: 256px;
+	height: 256px;
+}
+
+.yesButtonReg a{
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+}
+
+.yesButtonReg a h4{
+	padding: 130px 0 0 0;
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+	color: #000000;
+	height: inherit;
+}
+
+.yesb:hover > .yesButtonReg a h4{
+	padding: 140px 0 0 0;
+}
+
+.yesButtonPress{
+	background: url(../images/yesbuttpressed.png);
+}
+
+/* No Button */
+.nob{
+	position: relative;
+	cursor: pointer;
+	text-align: center;
+	margin: 0 auto;
+}
+/* Hand */
+.nobhand{
+	position: absolute;
+	top: 0;
+	right: 30%;
+	font-size: 150px;
+	opacity: 0;
+	color: #000;
+	-webkit-text-shadow: 2px 2px 0px #FFFFFF;
+	text-shadow: 2px 2px 0px #FFFFFF;
+	transition: all ease 0.2s;
+}
+
+.nob:hover>.nobhand{
+	font-size: 100px;
+	opacity: 1;
+}
+
+.noButtonReg{
+	background: url(../images/nobutton.png);
+	width: 256px;
+	height: 256px;
+}
+
+.noButtonReg a{
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+}
+
+.noButtonReg a h4{
+	padding: 130px 0 0 0;
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+	color: #000000;
+	height: inherit;
+}
+
+.noButtonPress{
+	background: url(../images/yesbuttpressed.png);
+}
+
+/* ====================================== Footer */
+
+.footerMenu{
+	background-color: #131313;
+	-webkit-box-shadow: -5px 0px 10px #000000;
+	box-shadow: -5px 0px 10px #000000;
+	border-top: 2px solid #92C018;
+}
+
+.footerMenu nav ul li{
+	float: right;
+}
+
+.footerMenu nav ul li a{
+	color: #757575;
+	-webkit-text-shadow: none;
+	text-shadow: none;
+	transition: color ease-in-out 0.3s;
+	font-size: 16px;
+	padding-top: 18px;
+	letter-spacing: -0.5px;
+}
+
+.footerMenu nav ul li a:hover{
+	color: #FFFFFF;
+}
